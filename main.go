@@ -1,14 +1,12 @@
 package main
+import "fmt"
 
-
-func main() {
-
-	age := 1
-
-	if age == 18 {
-		println(" you can vote now ")
-	} else{
-		println(" you are not eligible to vote ")
-	}
-
+func main(){
+   i := 1
+   switch i{
+   case 1 : fmt.Println("one")
+   case 2 : fmt.Println("two")
+   case 3 : fmt.Println("three")
+   default: fmt.Println("other")
+   }
 }
