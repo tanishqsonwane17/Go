@@ -1,12 +1,15 @@
 package main
-import "fmt"
 
-func main(){
-   i := 1
-   switch i{
-   case 1 : fmt.Println("one")
-   case 2 : fmt.Println("two")
-   case 3 : fmt.Println("three")
-   default: fmt.Println("other")
-   }
+import (
+	"fmt"
+)
+
+func main() {
+	nums:= []int{1,2,3,4,5}
+    sum:= 0    
+    for _, num:= range nums{
+		sum = sum + num
+	}
+
+	fmt.Println(sum)
 }
